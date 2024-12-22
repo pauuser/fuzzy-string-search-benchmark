@@ -1,0 +1,5 @@
+Method,Explain (ms),Bench (avg ms)
+levenshtein_1,49.546,15.812066666666668
+levenshtein_less_equal_1,14.699,14.539333333333333
+pg_trgm_no_index_1,44.419,44.725733333333324
+pg_trgm_with_index_1,0.265,0.24920000000000003

@@ -1,0 +1,13 @@
+Method,Explain (ms),Bench (avg ms)
+levenshtein_1,35.101,0.5603333333333332
+levenshtein_2,169.678,48.22906666666667
+levenshtein_3,24975.06,24109.7406
+levenshtein_less_equal_1,3.594,0.33313333333333334
+levenshtein_less_equal_2,49.391,47.91799999999999
+levenshtein_less_equal_3,23805.783,23651.136866666664
+pg_trgm_no_index_1,11507.211,11524.4438
+pg_trgm_no_index_2,2890.741,2771.5485333333336
+pg_trgm_no_index_3,2801.801,2815.5706
+pg_trgm_with_index_1,272.524,223.0975333333333
+pg_trgm_with_index_2,1068.766,1042.9721333333332
+pg_trgm_with_index_3,1074.334,1043.9782666666665

@@ -1,0 +1,20 @@
+version: '3.9'
+
+volumes:
+    employees_postgres:
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:16.3
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+      POSTGRES_DB: employees
+    ports: 
+      - "5432:5432"
+    volumes:
+       - employees_postgres:/data/postgres
+       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
